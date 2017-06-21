@@ -1,0 +1,50 @@
+# simpleDialog
+简单实用的移动端和PC端弹框
+# 示例
+1.移动端
+$.mobDialog({
+    title:'测试',//可选
+    content:'hello world hello world hello world hello world',
+    init:function(){
+        alert('init');
+    },//可选
+    ok:{//可选
+        name:'确定',
+        event:function(){
+          //业务逻辑
+            alert('ok')
+        }
+    },
+    cancel:{//可选
+        name:'取消',
+        event:function(){
+          //业务逻辑
+            alert('no')
+        }
+    }
+});
+2.PC端
+$.pcDialog({
+    title:'测试',//可选
+    width:600,
+    height:400,
+    content:'<p>测试</p>',
+    init:function(){
+       alert('init')
+    },
+    ok:{//可选
+        name:'确定',
+        event:function(){
+          //业务逻辑
+            alert('ok')
+        }
+    },
+    cancel:{//可选
+        name:'取消',
+        event:function(){
+          //业务逻辑
+            alert('cancel')
+        }
+    }
+});
+      
