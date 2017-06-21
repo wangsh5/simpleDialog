@@ -1,0 +1,115 @@
+.pcDialog_container{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.3);
+    z-index:9999;
+    display:none;
+}
+.pcDialog_wrap{
+    background:#fff;
+    position:relative;
+    top:50%;
+    margin:auto;
+    box-sizing:border-box;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+}
+.pcDialog_header{
+    padding:10px 20px;
+    background:#17a2ff;
+    color:#fff;
+    /*border-bottom:1px solid #eaeaea;*/
+}
+.close_btn{
+    float:right;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    border:1px solid #eaeaea;
+    border-radius:50%;
+    text-align:center;
+    font-size:18px;
+    cursor:pointer;
+}
+.pcDialog_content{
+    -webkit-box-flex: 1;
+    -webkit-flex:1;
+    flex:1;
+    overflow:auto;
+    padding:10px 20px;
+}
+.pcDialog_footer{
+    border-top:1px solid #eaeaea;
+    padding:10px 20px;
+    text-align:center;
+}
+.pcDialog_footer a{
+    border:1px solid #eaeaea;
+    padding:6px 20px;
+    border-radius:4px;
+    cursor:pointer;
+}
+.pcDialog_footer .ok_btn{
+    margin-right:20px;
+}
+
+/*mobDialog*/
+.mobDialog_container{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.3);
+    z-index:9999;
+    display:none;
+}
+.mobDialog_wrap{
+    width:90%;
+    background:#f5f5f5;
+    border-radius:8px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.mobDialog_header{
+    font-size:18px;
+    text-align: center;
+    margin-top:20px;
+    color:#030303;
+}
+.mobDialog_content{
+    font-size:16px;
+    text-align: center;
+    padding:15px 10px;
+}
+.mobDialog_footer{
+    font-size:16px;
+    text-align: center;
+    border-top:1px solid #ccc;
+    display:-webkit-flex;
+    display:flex;
+}
+.mobDialog_footer a{
+    flex:1;
+    -webkit-flex:1;
+    padding:10px;
+}
+.mobDialog_footer .ok_btn{
+    color:#38adff;
+}
+.mobDialog_footer .cancel_btn{
+    color:#666;
+    border-right:1px solid #ccc;
+}

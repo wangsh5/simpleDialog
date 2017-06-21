@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,initial-scale=1.0,width=device-width"/>
+    <title>simpleDialog</title>
+    <link rel="stylesheet" href="css/simpleDialog.css"/>
+</head>
+<body>
+    <div id="main" onclick="mobTest()">点击mob</div>
+    <div id="mains" onclick="pcTest()">点击pc</div>
+</body>
+<script src="http://cdnjs.gtimg.com/cdnjs/libs/jquery/2.1.1-rc2/jquery.min.js"></script>
+<script src="js/simpleDialog.js"></script>
+<script>
+  function mobTest(){
+      $.mobDialog({
+          title:'测试',//可选
+          content:'hello world hello world hello world hello world',
+          init:function(){
+              alert('init');
+          },
+          ok:{
+              name:'确定',
+              event:function(){
+                  alert('ok')
+              }
+          },
+          cancel:{
+              name:'取消',
+              event:function(){
+                  alert('no')
+              }
+          }
+      });
+  }
+  function pcTest(){
+        $.pcDialog({
+            title:'测试',
+            width:600,
+            height:400,
+            content:'<p>测试</p>',
+            init:function(){
+               alert('init')
+            },
+            ok:{
+                name:'确定',
+                event:function(){
+                    alert('ok')
+                }
+            },
+            cancel:{
+                name:'取消',
+                event:function(){
+                    alert('cancel')
+                }
+            }
+        });
+    }
+</script>
+</html>
